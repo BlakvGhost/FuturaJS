@@ -1,5 +1,5 @@
 {
-  "name": "g-moduls",
+  "name": "futura.js",
   "version": "1.0.0",
   "description": "A small JavaScript library for common tasks such as Carousel, Exception, Animation handler and more...",
   "main": "fjs.init.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlakvGhost/gModuls.git"
+    "url": "git+https://github.com/BlakvGhost/FuturaJS.git"
   },
   "keywords": [
     "Carousel",
@@ -21,7 +21,7 @@
   "author": "BlakvGhost",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BlakvGhost/gModuls/issues"
+    "url": "https://github.com/BlakvGhost/FuturaJS/issues"
   },
-  "homepage": "https://github.com/BlakvGhost/gModuls#readme"
+  "homepage": "https://github.com/BlakvGhost/FuturaJS#readme"
 }

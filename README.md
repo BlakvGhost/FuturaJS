@@ -1,18 +1,18 @@
-# gModuls
+# FuturaJS
  A small JavaScript library for common tasks such as Carousel, Exception, Animation handler and more...
 
 ## Installation
 
-Install gModuls with GitHub
+Install FuturaJS with GitHub
 
 ```bash
-  git clone https://github.com/BlakvGhost/gModuls.git
+  git clone https://github.com/BlakvGhost/FuturaJS.git
 ```
 Add the script tag in your \<head><\/head>
 ```html
-<script src="path-to-gModuls/fjs.init.js" charset="utf-8" type="module"></script>
+<script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
 ```
-Replace the ***src*** "path-to-gModuls" by the true path.
+Replace the ***src*** "path-to-FuturaJS" by the true path.
 
 ## Usage/Examples
 
@@ -33,7 +33,7 @@ Exemple
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <script src="path-to-gModuls/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
     </head>
     <body>
         <header id="staticHeader">
@@ -71,7 +71,7 @@ Exemple with animation.js library class
 <html lang="fr">
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="path-to-gModuls/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
     </head>
     <body>
         <div class="revealElement">
@@ -113,7 +113,7 @@ Exemple
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <script src="path-to-gModuls/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
     </head>
     <body>
         <h1 data-fv-anim='autowrite' data-fv-data="Write Here Your Text"></h1>
@@ -138,7 +138,7 @@ Exemple
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <script src="path-to-gModuls/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
     </head>
     <body>
         <h1 data-fv-anim='countdown' data-fv-data='1000'></h1>
@@ -182,7 +182,7 @@ Exemple with bootstrap class
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <script src="path-to-gModuls/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
     </head>
     <body>
         <div class="fv-carousel-main position-relative w-100" style="height: 500px;">
