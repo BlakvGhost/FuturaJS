@@ -1,5 +1,5 @@
 {
-  "name": "futura.js",
+  "name": "@futuravision/futura",
   "version": "1.0.0",
   "description": "A small JavaScript library for common tasks such as Carousel, Exception, Animation handler and more...",
   "main": "fjs.init.js",
@@ -18,10 +18,13 @@
     "Reveal",
     "NumberAutoCount"
   ],
-  "author": "BlakvGhost",
+  "authors": ["BlakvGhost", "v1p3r75"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BlakvGhost/FuturaJS/issues"
   },
-  "homepage": "https://github.com/BlakvGhost/FuturaJS#readme"
+  "homepage": "https://github.com/BlakvGhost/FuturaJS#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }
