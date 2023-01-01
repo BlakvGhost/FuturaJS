@@ -1,0 +1,27 @@
+{
+  "name": "g-moduls",
+  "version": "1.0.0",
+  "description": "A small JavaScript library for common tasks such as Carousel, Exception, Animation handler and more...",
+  "main": "fjs.init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlakvGhost/gModuls.git"
+  },
+  "keywords": [
+    "Carousel",
+    "Animation",
+    "Static",
+    "Header",
+    "Reveal",
+    "NumberAutoCount"
+  ],
+  "author": "BlakvGhost",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlakvGhost/gModuls/issues"
+  },
+  "homepage": "https://github.com/BlakvGhost/gModuls#readme"
+}

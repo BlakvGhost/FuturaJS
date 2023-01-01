@@ -298,4 +298,4 @@ Exemple with bootstrap class
 
 ## Support
 
-For support, email me on kabirou2001@gmail or join our Slack channel.
+For support, email me on kabirou2001@gmail.com or join our Slack channel.
