@@ -1,24 +1,88 @@
 # FuturaJS
- A small JavaScript library for common tasks such as Carousel, Exception, Animation handler and more...
+ A small JavaScript library for common tasks such as Carousel, Exception, Animation handler, Auto Write Text, Auto Count Number in interval, static header and more...
+
+<div align="center">
+
+[![npm version](https://img.shields.io/npm/v/@futuravision/futura.js.svg?style=flat-square)](https://www.npmjs.org/package/@futuravision/futura.js)
+[![Build status](https://img.shields.io/github/workflow/status/BlakvGhost/FuturaJS?logo=github&style=flat-square)](https://github.com/BlakvGhost/FuturaJS/actions/workflows/ci.yml)
+[![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=@futuravision/futura.js&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=@futuravision/futura.js)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@futuravision/futura.js?style=flat-square)](https://bundlephobia.com/package/@futuravision/futura.js@latest)
+[![npm downloads](https://img.shields.io/npm/dm/@futuravision/futura.js.svg?style=flat-square)](https://npm-stat.com/charts.html?package=@futuravision/futura.js)
+</div>
+
+## Table of Contents
+
+  - [Features](#features)
+  - [Browser Support](#browser-support)
+  - [Installing](#installing)
+    - [Package manager](#package-manager)
+    - [CDN](#cdn)
+    - [GitHub](#github)
+  - [Usage/Examples](#examples)
+    - [Fixed Header](#fixed-header)
+    - [Intersection](#intersection)
+    - [Auto Write Text](#autowritetext)
+    - [Auto Count Number](#numberautocount)
+    - [FvCarousel](#fvcarousel)
+    - [Preloader](#preloader)
+  - [Authors](#authors)
+  - [License](#license)
+
+## Features
+
+- Make Carousel Easy to use
+- Auto Write Text When it visible to the visitor screen
+- Auto Count Number When it visible to the screen
+- Make animation on elements when thery are visible to the visitor  screen
+- Make your header static when you are scrolling down and default when up
+- Make your page Preloader, which loads when the site is loading file and not ready
+
+## Browser Support
+
+![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/main/src/safari/safari_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/main/src/opera/opera_48x48.png) | ![Edge](https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge_48x48.png) | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |
+--- | --- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
+
 
 ## Installation
 
-Install FuturaJS with GitHub
+### Package manager
+
+Using npm:
 
 ```bash
-  git clone https://github.com/BlakvGhost/FuturaJS.git
+$ npm install @futuravision/futura.js
+```
+Once the package is installed, you can import the library using `import` or `require` approach:
+
+```js
+import {FvCarousel, AutoWriteText} from 'futura.js';
+```
+
+### CDN
+
+Using unpkg CDN (ES5 UMD browser module):
+
+```html
+<script src="https://unpkg.com/@futuravision/futura.js/dist/futurajs.min.js"></script>
+```
+### GitHub
+
+Using GitHub
+
+```bash
+ $ git clone https://github.com/BlakvGhost/FuturaJS.git
 ```
 Add the script tag in your \<head><\/head>
 ```html
-<script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
+<script src="futurajs/dist/futurajs.min.js" charset="utf-8"></script>
 ```
-Replace the ***src*** "path-to-FuturaJS" by the true path.
 
-## Usage/Examples
+## Examples
 
  Choose the moduls you want to use:
 
-- Fixed Header
+### Fixed Header
 
 Used for making header fixed when scrolling with animation
 
@@ -33,7 +97,7 @@ Exemple
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="https://unpkg.com/@futuravision/futura.js/dist/futurajs.min.js"></script>
     </head>
     <body>
         <header id="staticHeader">
@@ -51,7 +115,15 @@ Exemple
     </script>
 </html>
 ```
-- Intersection
+#### Possible Properties
+| params             | Value                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| elt: | header selector|
+| callback: | A callback function when the header is static |
+| fallback :| "A fallback function when the header become as default" |
+----------------------------------------------------------------
+
+ ### Intersection
 
 Used for making animation type when an element is visible on the user screen
 
@@ -65,13 +137,25 @@ new fJs.Intersection({
     threshold: 0.7,
 });
 ```
+
+#### Possible Properties
+
+all the following properties are in object notation
+
+| params             | Value                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| elt: | elements class selector|
+| class: | Custom Animation class when the element is visible in screen|
+----------------------------------------------------------------
+
+
 Exemple with animation.js library class
 ```html
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="https://unpkg.com/@futuravision/futura.js/dist/futurajs.min.js"></script>
     </head>
     <body>
         <div class="revealElement">
@@ -97,7 +181,7 @@ Exemple with animation.js library class
 </html>
 ```
 
-- AutoWriteText
+### AutoWriteText
 
 Used for writing text when it visible on the user screen
 
@@ -113,7 +197,7 @@ Exemple
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="https://unpkg.com/@futuravision/futura.js/dist/futurajs.min.js"></script>
     </head>
     <body>
         <h1 data-fv-anim='autowrite' data-fv-data="Write Here Your Text"></h1>
@@ -126,33 +210,34 @@ Exemple
     </script>
 </html>
 ```
-- NumberAutoCount
+### NumberAutoCount
 
 Used for counting number in time interval when it visible on the user screen
 
 ```javascript
-new fJs.NumberAutoCount();
+new fJs.NumberAutoCount({
+    timeout: 300
+});
 ```
 Exemple
 ```html
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="https://unpkg.com/@futuravision/futura.js/dist/futurajs.min.js"></script>
     </head>
     <body>
         <h1 data-fv-anim='countdown' data-fv-data='1000'></h1>
     </body>
     <script type="text/javascript">
-        new fJs.AutoWriteText({
-        separator: '|',
-        timeout: 300
-    });
+        new fJs.NumberAutoCount({
+            timeout: 300
+        });
     </script>
 </html>
 ```
 
-- FvCarousel
+### FvCarousel
 
 Used for creating a simply carousel
 
@@ -182,7 +267,7 @@ Exemple with bootstrap class
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <script src="path-to-FuturaJS/fjs.init.js" charset="utf-8" type="module"></script>
+        <script src="https://unpkg.com/@futuravision/futura.js/dist/futurajs.min.js"></script>
     </head>
     <body>
         <div class="fv-carousel-main position-relative w-100" style="height: 500px;">
@@ -281,6 +366,27 @@ Exemple with bootstrap class
     </script>
 </html>
 ```
+### Preloader
+
+Make your page Preloader, which loads when the site is loading file and not ready
+```html
+<!-- ADD THIS CUSTOM TAG JUST AFTER INSIDE BODY TAG  -->
+<fv-preloader></fv-preloader>
+
+```
+Exemple
+```html
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <script src="https://unpkg.com/@futuravision/futura.js/dist/futurajs.min.js"></script>
+    </head>
+    <body>
+        <fv-preloader></fv-preloader>
+    </body>
+</html>
+```
+
 ## Tech Stack
 
 **Client:** HTML5, CSS3, ES6

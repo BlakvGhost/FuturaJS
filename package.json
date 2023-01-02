@@ -1,8 +1,8 @@
 {
-  "name": "@futuravision/futura",
-  "version": "1.0.0",
+  "name": "@futuravision/futura.js",
+  "version": "2.1.0",
   "description": "A small JavaScript library for common tasks such as Carousel, Exception, Animation handler and more...",
-  "main": "fjs.init.js",
+  "main": "dist/futurajs.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,11 @@
     "Static",
     "Header",
     "Reveal",
-    "NumberAutoCount"
+    "NumberAutoCount",
+    "Preloader",
+    "Tab",
+    "AutoCount",
+    "Intersection"
   ],
   "authors": ["BlakvGhost", "v1p3r75"],
   "license": "MIT",
