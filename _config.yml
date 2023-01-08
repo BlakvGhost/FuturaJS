@@ -6,7 +6,4 @@ title: JavaScript library
 description: Futura.js website, the javascript library for animations and carousels
 show_downloads: true
 google_analytics: G-V023PDPSMZ
-readme_index:
-  enabled:          true
-  remove_originals: false
-  with_frontmatter: false
+markdown: GFM
