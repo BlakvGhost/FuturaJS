@@ -1,6 +1,6 @@
 {
   "name": "@futuravision/futura.js",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "description": "A small JavaScript library for common tasks such as Carousel, Exception, Animation handler and more...",
   "main": "dist/futurajs.min.js",
   "scripts": {
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/BlakvGhost/FuturaJS/issues"
   },
-  "homepage": "https://github.com/BlakvGhost/FuturaJS#readme",
+  "homepage": "https://blakvghost.github.io/FuturaJS",
   "directories": {
     "lib": "lib"
   }
