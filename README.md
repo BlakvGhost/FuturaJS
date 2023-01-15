@@ -393,8 +393,8 @@ Exemple
 
 ## Authors
 
-- [@v1p3r75](https://github.com/v1p3r75)
-- [@BlakvGhost](https://github.com/BlakvGhost)
+- [@BlakvGhost](https://kabirou-dev.vercel.app)
+- [@v1p3r75](https://fortunatus-ek.vercel.app)
 
 ## License
 
