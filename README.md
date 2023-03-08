@@ -1,4 +1,4 @@
-# FuturaJS
+# Futura.js
 Small JavaScript library for common tasks such as Carousel, Exception, Animation handler, Auto Write Text, Auto Count Number in interval, static header and more...
 
 <div align="center">
