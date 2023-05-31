@@ -393,7 +393,7 @@ Exemple
 
 ## Authors
 
-- [@BlakvGhost](https://kabirou-dev.vercel.app)
+- [@BlakvGhost](https://kabirou-alassane.com)
 - [@v1p3r75](https://fortunatus-ek.vercel.app)
 
 ## License
